@@ -7,7 +7,10 @@ let myInterval;
 function padZero(value){
     return value.toString().padStart(2,0)
 }
-let root=document.getElementById('root')
+
+let root=document.createElement('div')
+root.setAttribute('id','root')
+document.body.appendChild(root)
 
 let h1=document.createElement('h1')
 h1.innerHTML="Stopwatch"
